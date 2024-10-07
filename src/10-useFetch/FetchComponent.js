@@ -12,11 +12,11 @@ export default function FetchComponent() {
   return (
     <div>
       <div>{id}</div>
-      <button onClick={() => setId(currentId => currentId + 1)}>
-        Increment ID
+      <button onClick={() => setId(currentId => currentId + 2)}>
+        Increment ID by 2
       </button>
       <div>Loading: {loading.toString()}</div>
-      <div>{JSON.stringify(error, null, 2)}</div>
+      <div>{JSON.stringify(error, console.log("error here), 2)}</div>
       <div>{JSON.stringify(value, null, 2)}</div>
     </div>
   )
